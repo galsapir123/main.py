@@ -32,4 +32,30 @@ if a > 9 and a < 100:
 if a // 10 == a % 10:
     print('yes')
 else:print('no')
+
+#-------------------------------------------------------------
+
+top = int(input('Enter a positive number:'))
+num = 0
+if top < 0:
+    print('Negative number!')
+else:
+    while top > num:
+        print(num)
+        num = num + 1
+        
+        
+        #----------------------------------------------------
+        #While loops: 
+        
+        count = 1
+while count <= 5:
+    print('yes')
+    count = count + 1
+
+
+
+top = int(input('Enter a positive number:'))
+while top > 0:
+    print(0 + 1)
   
