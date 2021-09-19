@@ -59,3 +59,36 @@ top = int(input('Enter a positive number:'))
 while top > 0:
     print(0 + 1)
   
+  #----------------------------------------
+  
+  n = int(input('insert a number: '))
+x = 2
+while x <= n:
+    print(x)
+    x += 2
+    
+    #-----------------------------------
+    max = int(input('please insert max: '))
+den = int(input('please insert den: '))
+
+a = den
+
+while a <= max:
+    print(a)
+    a += den
+
+#-------------------------------------------
+a = int(input('please insert a full number: '))
+b = int(input('please insert a second full number: '))
+
+if a % 10 == 0 and b % 10 == 0:
+    if a > b:
+        while a >= b:
+            print(b)
+            b = b + 10
+    elif a < b:
+        while a <= b:
+            print(a)
+            a = a + 10
+else:
+    print('numbers are not full')
