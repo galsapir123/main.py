@@ -1,0 +1,74 @@
+biggest = 0
+x = int(input('please enter a number: '))
+
+if x <= 0:
+    print('none positive')
+else:
+    while x > 0:
+        if x > biggest:
+            biggest = x
+            x = int(input('please enter a number: '))
+        else:
+            x = int(input('please enter a number: '))
+print('biggest positive number is', biggest)
+
+# page 25 exercise 7
+
+#----------------------------------------------------------------
+
+grade = int(input('please enter a grade: '))
+sum = 0
+avg = 0
+numofgrades = 0
+
+while True:
+    grade = int(input('please enter a grade: '))
+    if numofgrades > 40:
+        break
+    if grade == 0:
+        continue
+    if grade > 0:
+        sum += grade
+        numofgrades += 1
+        if avg == 99:
+            break
+
+avg = sum / numofgrades
+print(avg)
+
+
+#---------------------------------------------------------
+
+i = 1
+f = int(input('input first number: '))
+while i <= 9:
+    i = i + 1
+    s = int(input('input next number: '))
+    if s < f:
+        print('not sorted')
+        break
+    f = s
+
+if i == 10:
+    print('all numbers are sorted!')
+    
+    
+    #---------------------
+    not tested
+    
+    tickets = 1
+order = 0
+sum = 0
+num = 0
+
+while True:
+    tickets = tickets + 1
+    num = tickets
+    order = tickets + 1
+    sum = sum + order
+    if sum == tickets:
+        break
+        print(tickets)
+    if tickets == 10:
+        break
+    print(sum)
