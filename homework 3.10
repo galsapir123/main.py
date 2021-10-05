@@ -1,0 +1,72 @@
+question num 2
+
+sum = 0
+
+while True:
+    num = int(input('please enter a number above 77: '))
+    if num == 0:
+        break
+    if num <= 77:
+        continue
+    if num > 77:
+        sum += num
+print(sum)
+
+#-------------------------------------------------
+page 35 - 1
+
+
+count = 1
+num = int(input('input the first number: '))
+while count <= 9:
+    count = count + 1
+    a = int(input('input the next number: '))
+    if a < num:
+        print('not sorted')
+        break
+    num = a
+
+if count == 10:
+    print('the numbers are sorted')
+
+
+#-------------------------------------------------------
+
+
+
+page 35 - 2
+
+tickets = 0
+sume_of_tickets = 0
+
+while True:
+    tickets += 1
+    if tickets == 10:
+        print('not found')
+        break
+        
+    x = int(input('Please enter a number: '))
+    if sume_of_tickets == x:
+        print(sume_of_tickets)
+        break
+        
+    sume_of_tickets += x
+    
+    
+    #------------------------------------------------
+    page 35 - 3
+    
+    
+    tickets_count = 0
+tem = 0
+
+while True:
+    tickets_count += 1
+    if tickets_count == 11:
+        print('correct data')
+        break
+    tem = int(input('please enter a ticket: '))
+    if tem >= 40 or tem <= -5:
+        print('invalid data')
+        break
+
