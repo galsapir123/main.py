@@ -69,4 +69,42 @@ while True:
     if tem >= 40 or tem <= -5:
         print('invalid data')
         break
+        
+ #----------------------------------------------
+ page 35 - 4
+ 
+ 
+ 
+ countries = 170
+yes = 0
+no = 0
+avoid = 0
+veto = 0
+
+yes_code = 1
+no_code = 2
+avoid_code = 3
+veto_code = 4
+
+index = 1
+
+while True:
+    vote = int(input('please enter your vote: '))
+    if vote == yes_code:
+        yes += 1
+    elif vote == no_code:
+        no += 1
+    elif vote == avoid_code:
+        avoid += 1
+    elif vote == veto_code:
+        print('veto by country number', index)
+        break
+    else:
+        print('illegal vote')
+        continue
+    index += 1
+    if index == 171:
+        break
+
+
 
