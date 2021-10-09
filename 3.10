@@ -32,6 +32,17 @@ while True:
         numofgrades += 1
         if avg == 99:
             break
+#--------------------------------------
+
+n = int(input('please enter a number: '))
+
+while n != 0:
+    if n > 10:
+        n = n // 10
+        continue
+
+    print(n)
+    n = int(input('please enter a number: '))
 
 avg = sum / numofgrades
 print(avg)
