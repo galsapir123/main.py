@@ -1,0 +1,105 @@
+page 25 - 8
+
+
+a = int(input('please enter a positive number: '))
+lowest = a
+
+while True:
+    a = int(input('please enter positive number: '))
+    if a <= 0:
+        break
+    if a < lowest:
+        lowest = a
+print(lowest)
+
+
+--------------------------------------------
+
+
+page 25 - 10
+
+n = int(input('please enter a number: '))
+
+while n != 0:
+    if n > 10:
+        n = n // 10
+        continue
+
+    print(n)
+    n = int(input('please enter a number: '))
+    
+    
+    
+    
+    ----------------------------------------------
+    
+    #page 25 - 11
+    #i complicated this one a bit too much, hope thats alright
+    
+    a = int(input('please enter a number: '))
+mid = 0
+left = 0
+if a > 100:
+    left = a // 100
+
+    mid = a % 100
+    mid = mid // 10
+
+    a = a % 10
+    print(left,',', mid,',', a,',' 'there are 3 digits')
+
+if a > 10 and a < 100:
+    print(a // 10,',', a % 10, 'there are 2 digits')
+    
+if a < 10:
+    print(a)
+    
+    
+-----------------------------------------------------
+
+
+a = int(input('please enter a number: '))
+mid = 0
+left = 0
+if a > 100:
+    left = a // 100
+
+    mid = a % 100
+    mid = mid // 10
+
+    a = a % 10
+    print(a + mid + left)
+
+elif a > 10 and a < 100:
+    print(a // 10 + a % 10)
+
+elif a < 10:
+    print(a)
+------------------------------------------------------
+
+#Question number 2 in blog
+
+
+
+a = int(input('please enter a number which is not zero: '))
+
+while True:
+    if a == 0:
+        a = int(input('please enter a number which is not zero: '))
+        continue
+    elif a != 0:
+        while True:
+            x = int(input('please enter a second number which is not zero: '))
+            if x == 0:
+                continue
+            elif x != 0:
+                break
+    if a > x:
+        print('bigger')
+    elif a < x:
+        break
+    elif a == 0:
+        continue
+
+
+print('Loop broken')
