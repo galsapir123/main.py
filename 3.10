@@ -99,3 +99,17 @@ while _class < 3:
         sum += grade
     avg = sum / 5
     print('average is', avg)
+
+
+------------------------------------------
+
+n = int(input('factorial number: '))
+index = 0
+sum = 0
+while index < n:
+    if index % 3 == 0:
+        sum += index
+    index += 1
+print(sum)
+
+---------------------------------
