@@ -1,0 +1,46 @@
+class BankAccount():
+    def __init__(self, acc_id, full_name, balance):
+        self.acc_id = acc_id
+        self.full_name = full_name
+        self.balance = balance
+
+    def __str__(self):
+        return f'Account id: {self.acc_id}, Full name: {self.full_name}, Balance: {self.balance}'
+
+    def __eq__(self, other):
+        if type(self) != type(other):
+            return 'Not int'
+        return self.balance == other.balance
+
+    def __add__(self, other):
+        if type(other) == int or type(other) == float:
+            return self.balance + other
+
+    def __sub__(self, other):
+        if type(other) == int or type(other) == float:
+            return self.balance - other
+
+    def __gt__(self, other):
+        if type(self) != type(other):
+            return 'Not int'
+        return self.balance > other.balance
+
+    def __lt__(self, other):
+        if type(self) != type(other):
+            return 'Not int'
+        return self.balance < other.balance
+
+    def __repr__(self):
+        return f'BankAccount({self.acc_id, self.full_name, self.balance})'
+
+
+
+
+ted = BankAccount(542, 'ted moshavi', 5000)
+moshe = BankAccount(523, 'moshe nosbaom', 11000)
+print('Does ted have more money than moshe?' , ted > moshe)
+print('Does moshe have more money than ted?', ted < moshe)
+print('Does ted and moshe have the same amount of money?', ted == moshe)
+print('Moshe deposited 5$ to his bank account, the balance is now: ', moshe + 5)
+print('ted withdrew 5$ from his bank account, his balance is now: ', ted - 5)
+
