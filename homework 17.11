@@ -43,4 +43,3 @@ print('Does moshe have more money than ted?', ted < moshe)
 print('Does ted and moshe have the same amount of money?', ted == moshe)
 print('Moshe deposited 5$ to his bank account, the balance is now: ', moshe + 5)
 print('ted withdrew 5$ from his bank account, his balance is now: ', ted - 5)
-
